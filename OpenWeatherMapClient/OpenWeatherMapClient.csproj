@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>Gamoya.Weather.OpenWeatherMap</RootNamespace>
+		<AssemblyName>Gamoya.Weather.OpenWeatherMap</AssemblyName>
+		<Authors>Thomas Kment</Authors>
+		<Product>Gamoya.Weather.OpenWeatherMap</Product>
+		<Copyright>Copyright © Gamoya 2024</Copyright>
+		<Title>OpenWeatherMap REST-api-client</Title>
+		<Description>OpenWeatherMap REST-api-client</Description>
+		<PackageId>Gamoya.Weather.OpenWeatherMap</PackageId>
+		<Version>1.0.0</Version>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/Gamoya/OpenWeatherMap</RepositoryUrl>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>Weather;OpenWeatherMap</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Text.Json" Version="8.0.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+
+</Project>
