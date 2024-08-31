@@ -1,5 +1,8 @@
 # OpenWeatherMap
-A .NET client for OpenWeatherMap
+An aot compatible .NET client for OpenWeatherMap (https://openweathermap.org/)
+
+[![NuGet](https://img.shields.io/nuget/v/Gamoya.Weather.OpenWeatherMap)](https://www.nuget.org/packages/Gamoya.Weather.OpenWeatherMap)
+[![GitHub](https://img.shields.io/github/license/Gamoya/OpenWeatherMap)](https://github.com/Gamoya/OpenWeatherMap/blob/main/LICENSE)
 
 ## Prerequisites
 Get API-Key from https://openweathermap.org/

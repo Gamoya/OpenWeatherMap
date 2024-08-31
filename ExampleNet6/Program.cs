@@ -1,7 +1,7 @@
 ﻿namespace Gamoya.Weather.OpenWeatherMap.Example {
     internal class Program {
         static async Task Main(string[] args) {
-            string apiKey = Environment.GetEnvironmentVariable("OPEN_WEATHER_MAP_API_KEY");
+            var apiKey = Environment.GetEnvironmentVariable("OPEN_WEATHER_MAP_API_KEY");
             var settings = new Settings { Units = Units.Metric, LanguageCode = "en" };
 
             var latitude = 52.520008m;

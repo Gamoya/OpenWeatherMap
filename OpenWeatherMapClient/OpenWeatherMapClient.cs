@@ -18,6 +18,14 @@ namespace Gamoya.Weather.OpenWeatherMap {
         private readonly string _apiKey;
         private readonly Settings _defaultSettings;
 
+#if NET8_0_OR_GREATER
+
+        static OpenWeatherMapClient() {
+            _jsonSerializerOptions.TypeInfoResolver = SourceGenerationContext.Default;
+        }
+
+#endif
+
         public OpenWeatherMapClient(string apiKey) : this(apiKey, null) {
         }
 
