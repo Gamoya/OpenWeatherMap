@@ -1,6 +1,6 @@
 ﻿namespace Gamoya.Weather.OpenWeatherMap.Example {
     internal class Program {
-        static async Task Main(string[] args) {
+        static async Task Main() {
             var apiKey = Environment.GetEnvironmentVariable("OPEN_WEATHER_MAP_API_KEY");
             var settings = new Settings { Units = Units.Metric, LanguageCode = "en" };
 

@@ -10,21 +10,21 @@
 		<Title>OpenWeatherMap REST-api-client</Title>
 		<Description>OpenWeatherMap REST-api-client</Description>
 		<PackageId>Gamoya.Weather.OpenWeatherMap</PackageId>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryUrl>https://github.com/Gamoya/OpenWeatherMap</RepositoryUrl>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageTags>Weather;OpenWeatherMap</PackageTags>
+		<PackageTags>Weather;OpenWeatherMap;aot</PackageTags>
 		<IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">True</IsAotCompatible>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="System.Text.Json" Version="8.0.4" />
+		<PackageReference Include="System.Text.Json" Version="9.0.7" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="..\README.md" Pack="true" PackagePath="\"/>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>

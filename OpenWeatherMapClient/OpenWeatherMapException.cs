@@ -2,6 +2,7 @@
 using System.Runtime.Serialization;
 
 namespace Gamoya.Weather.OpenWeatherMap {
+    [Serializable]
     public class OpenWeatherMapException : Exception {
         public OpenWeatherMapException() : base() { }
         public OpenWeatherMapException(string message) : base(message) { }

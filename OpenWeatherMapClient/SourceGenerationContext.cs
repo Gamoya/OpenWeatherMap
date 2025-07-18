@@ -7,6 +7,7 @@ namespace Gamoya.Weather.OpenWeatherMap {
     [JsonSerializable(typeof(CurrentWeatherResponse))]
     [JsonSerializable(typeof(ForecastWeatherResponse))]
     [JsonSerializable(typeof(DailyWeatherResponse))]
+    [JsonSerializable(typeof(Error))]
     internal partial class SourceGenerationContext : JsonSerializerContext {
     }
 }
